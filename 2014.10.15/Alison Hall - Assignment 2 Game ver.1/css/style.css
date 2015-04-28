@@ -1,0 +1,40 @@
+* {
+	border: 1px solid red;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	border: 5px solid blue;
+}
+
+header {
+	border: 5px solid purple;
+	display: inline-block;
+	/*width: 100%;*/
+	/*height: 100%;*/
+}
+
+.mainWrapper {
+	width: 100%;
+	height: 100%;
+	border: 5px solid pink;
+	/*position: absolute;*/
+	/*display: block;*/
+}
+
+#cardDiv {
+	width: 100%;
+	height: 100%;
+	/*position: absolute;
+	top: 0%;
+	left: 0%;*/
+	display: inline-block;
+	/*background-color: cyan;*/
+	/*border: 5px solid green;*/
+}
+
+#cardDiv img {
+	height: 70px;
+	width: 70px;
+}

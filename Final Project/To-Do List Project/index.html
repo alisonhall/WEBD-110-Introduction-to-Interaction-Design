@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>To-Do App Project</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+  	<section class="bodyWrapper">
+	  	<aside>
+	  		<h1>All To-Do Lists</h1>
+	  		<label for="new-list">Add List</label>
+			<input id="new-list" type="text">
+			<button id="addListButton">Add List</button>
+
+			<h3>All Lists</h3>
+			<ul id="allLists">
+<!-- 				<li>
+					<button class="listName">Temp</button>
+					<input type="text">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li> -->
+			</ul>
+
+	  	</aside>
+
+		<div id="allTasks" class="container">
+		  <p>
+			<label for="new-task">Add Item</label>
+			<input id="new-task" type="text">
+			<button id="add-button">Add</button>
+		  </p>
+		  
+		  <h3>Todo</h3>
+		  <ul id="incomplete-tasks">
+<!-- 			<li>
+				<input type="checkbox">
+				<label>Test Data</label>
+				<input type="text">
+				<button class="edit">Edit</button>
+				<button class="delete">Delete</button>
+			</li> -->
+<!-- 			<li class="editMode">
+				<input type="checkbox">
+				<label>Test Data</label>
+				<input type="text" value="Go Shopping">
+				<button class="edit">Edit</button>
+				<button class="delete">Delete</button>
+			</li> -->
+			
+		  </ul>
+		  
+		  <h3>Completed</h3>
+		  <ul id="completed-tasks">
+<!-- 			<li>
+				<input type="checkbox" checked>
+				<label>Test Data</label>
+				<input type="text">
+				<button class="edit">Edit</button>
+				<button class="delete">Delete</button>
+			</li> -->
+		  </ul>
+		</div>
+		<div id="background">
+			<img src="images/blue_background.jpg">
+		</div>
+	</section>
+
+	<script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>

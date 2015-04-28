@@ -1,0 +1,170 @@
+/**********************************
+GENERAL
+***********************************/
+
+/** {
+	border: 1px solid red;
+}*/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	-webkit-perspective: 10000px;
+	font-family: sans-serif;
+}
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+	border: 5px solid #DCDCDC;
+	float: center;
+	margin: 5px auto;
+	padding: 5px;
+	max-width: 90%;
+	min-width: 850px;
+	width: 70%;
+	height: 130px;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+h2, p {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+.headerNumSets {
+	display: inline-block;
+	float: left;
+	font-size: 1em;
+	margin: 10px 0 0 20px;
+}
+
+#numSets {
+	display: inline-block;
+	width: 40px;
+	margin: 10px 10px;
+	height: 1em;
+}
+
+#startButton {
+	display: inline-block;
+	margin: 20px;
+}
+
+.headerMatched,
+.headerTotal {
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: -60px;
+	margin: 0 20px;
+}
+
+
+/**********************************
+PAGE
+***********************************/
+
+img {
+  max-width: 100%;
+}
+
+.mainWrapper {
+	border: 5px solid darkslateblue;
+	max-width: 90%;
+	min-width: 850px;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 5px;
+	float: center;
+	
+}
+
+#cardDiv {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.newDiv,
+.hasClicked,
+.matched {
+	display: inline-block;
+	width: 10%;
+	margin: 1.5%;
+	padding: 5% 0;
+}
+
+
+
+
+/**********************************
+CARD FLIP
+**********************************/
+
+.newDiv,
+.hasClicked,
+.matched {
+	transition: -webkit-transform 0.5s ease-in;
+	-webkit-transform-style: preserve-3d;
+}
+
+.newDiv div,
+.hasClicked div,
+.matched div {
+	position: absolute;
+	top: 0;
+	-webkit-backface-visibility: hidden;
+}
+
+.sideA {
+	z-index: 100;
+}
+
+.sideB {
+	-webkit-transform: rotateY(-180deg);
+}
+
+.hasClicked,
+.matched {
+/*.newDiv:active{*/
+	-webkit-transform: rotateY(-0.5turn);
+}
+
+
+/**********************************
+COLOURS
+**********************************/
+
+html {
+	background-color: gray;
+}
+
+header {
+	background-color: darkslateblue;
+	color: white;
+}
+
+#cardDiv {
+	background-color: #DCDCDC;
+}

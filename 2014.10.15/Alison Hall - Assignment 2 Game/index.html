@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Matching Game</h1>
+        <h2>Instructions:</h2>
+        <p>Click on two cards at a time to try to match sets of the same cards! Keep trying until you have matched them all.</p>
+        <div>
+            <div class="headerNumSets">
+                <label for="numSets" id="numSetsLabel">Enter the number of sets you want to match (1-25): </label>
+                <input type="text" name="numSets" id="numSets"/>
+            </div>
+            <div>
+                <input type="submit" value="Start Game" id="startButton"/>
+            </div>
+
+            <div class="headerMatched">
+                <label for="matched">Total Matched: </label>
+                <output name="matched" id="matched"></output>
+            </div>
+            <div class="headerTotal">
+                <label for="total">Total Tries: </label>
+                <output name="total" id="total"></output>
+            </div>
+        </div>
+    </header>
+    <div class="mainWrapper">
+        <div id="cardDiv"></div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
